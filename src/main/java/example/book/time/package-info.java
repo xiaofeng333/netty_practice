@@ -4,6 +4,6 @@
  * ChannelHandlerAdapter 用于对网络事件进行读写操作, 通常只需要关注channelRead和exceptionCaught方法。
  * ByteBuf 类似NIO中的{@link java.nio.ByteBuffer}
  * NioServerSocketChannel 功能对应NIO中的{@link java.nio.channels.ServerSocketChannel}
- * 该例程未能解决tcp粘包拆包
+ * {@link example.book.time.client}和{@link example.book.time.server}的例程未能解决tcp粘包拆包, 参见{@link example.book.time.decoder}
  */
 package example.book.time;
