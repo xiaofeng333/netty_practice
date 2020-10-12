@@ -25,6 +25,8 @@ public class TimeServerDecoder {
             ServerBootstrap serverBootstrap = new ServerBootstrap();
             serverBootstrap.group(bossGroup, workerGroup)
                     .channel(NioServerSocketChannel.class)
+
+                    // backlog: 允许客户端排队的最大长度
                     .option(ChannelOption.SO_BACKLOG, 1024)
                     .childHandler(new ChildChannelHandlerDecoder());
 
